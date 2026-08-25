@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS Mais Pessoas | Recrutamento, Seleção e Gestão de Pessoas</title>
+<meta name="description" content="MS Mais Pessoas — consultoria especializada em Recrutamento e Seleção, Soluções em Gestão, Recursos Humanos, Processos e Treinamentos para empresas que querem crescer com as pessoas certas.">
+<meta name="keywords" content="recrutamento e seleção, RH, gestão de pessoas, consultoria de RH, treinamentos corporativos, MS Mais Pessoas">
+<meta name="author" content="MS Mais Pessoas">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="MS Mais Pessoas | Recrutamento, Seleção e Gestão de Pessoas">
+<meta property="og:description" content="Conectamos empresas às pessoas certas com processos ágeis, transparentes e orientados a resultado.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%234a1252%22/%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%232d0a35%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20style%3D%22isolation%3Aisolate%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2224%22%20fill%3D%22url%28%23g%29%22/%3E%3Cpolygon%20points%3D%2222%2C80%2050%2C20%2078%2C80%22%20fill%3D%22%23f0b820%22/%3E%3Ccircle%20cx%3D%2246%22%20cy%3D%2244%22%20r%3D%2226%22%20fill%3D%22%238a3f8f%22%20style%3D%22mix-blend-mode%3Ascreen%22%20opacity%3D%220.85%22/%3E%3Ccircle%20cx%3D%2260%22%20cy%3D%2258%22%20r%3D%2217%22%20fill%3D%22%23f0b820%22%20style%3D%22mix-blend-mode%3Ascreen%22%20opacity%3D%220.5%22/%3E%3Cpolygon%20points%3D%2212%2C62%2028%2C62%2019%2C47%22%20fill%3D%22%23ffd166%22%20opacity%3D%220.9%22/%3E%3Ccircle%20cx%3D%2238%22%20cy%3D%2282%22%20r%3D%226.5%22%20fill%3D%22%23ffd166%22/%3E%3C/g%3E%3C/svg%3E">
+
+<style>
+  /* ==========================================================================
+     RESET & VARIÁVEIS
+  ========================================================================== */
+  :root{
+    --azul-marinho:#2d0a35;
+    --azul-marinho-2:#4a1252;
+    --azul-claro:#8a3f8f;
+    --dourado:#f0b820;
+    --dourado-claro:#ffd166;
+    --magenta-vivo:#a83fae;
+    --branco:#ffffff;
+    --cinza-claro:#f5f6f8;
+    --cinza-medio:#8a94a6;
+    --cinza-escuro:#333c4d;
+    --texto:#28303f;
+    --radius:14px;
+    --sombra: 0 10px 30px rgba(45,10,53,0.10);
+    --sombra-forte: 0 20px 45px rgba(45,10,53,0.18);
+    --transicao: all .3s ease;
+    --max-width: 1180px;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color:var(--texto);
+    background:var(--branco);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ text-decoration:none; color:inherit; }
+  ul{ list-style:none; }
+  button{ font-family:inherit; cursor:pointer; border:none; }
+  section{ padding:100px 0; }
+
+  .container{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  .eyebrow{
+    display:inline-block;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:.78rem;
+    font-weight:700;
+    color:var(--dourado);
+    margin-bottom:14px;
+  }
+
+  h1,h2,h3,h4{
+    font-weight:800;
+    color:var(--azul-marinho);
+    line-height:1.25;
+  }
+
+  h2{ font-size:clamp(1.8rem,3.2vw,2.6rem); }
+  h3{ font-size:1.3rem; }
+
+  .section-head{
+    text-align:center;
+    max-width:680px;
+    margin:0 auto 56px;
+  }
+  .section-head p{ color:var(--cinza-medio); font-size:1.05rem; margin-top:14px; }
+
+  /* ==========================================================================
+     BOTÕES (links configuráveis via data-attribute + JS CONFIG)
+  ========================================================================== */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 30px;
+    border-radius:50px;
+    font-weight:700;
+    font-size:.95rem;
+    transition:var(--transicao);
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--dourado),var(--dourado-claro));
+    color:var(--azul-marinho);
+    box-shadow:0 10px 24px rgba(240,184,32,.35);
+  }
+  .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 16px 30px rgba(240,184,32,.45); }
+  .btn-outline{
+    background:transparent;
+    color:var(--branco);
+    border:2px solid rgba(255,255,255,.6);
+  }
+  .btn-outline:hover{ background:rgba(255,255,255,.12); transform:translateY(-3px); }
+  .btn-ghost{
+    background:transparent;
+    color:var(--branco);
+    border:1.5px solid rgba(255,255,255,.35);
+    padding:11px 22px;
+    font-size:.85rem;
+  }
+  .btn-ghost:hover{ border-color:var(--dourado); color:var(--dourado); transform:translateY(-3px); }
+  .btn-dark{
+    background:var(--azul-marinho);
+    color:var(--branco);
+  }
+  .btn-dark:hover{ background:var(--azul-claro); transform:translateY(-3px); }
+  .btn-block{ width:100%; }
+
+  /* ==========================================================================
+     HEADER / NAV
+  ========================================================================== */
+  header{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:1000;
+    background:linear-gradient(180deg, rgba(24,18,28,.55) 0%, rgba(24,18,28,0) 100%);
+    transition:var(--transicao);
+    padding:20px 0;
+  }
+  header.scrolled{
+    background:rgba(45,10,53,0.96);
+    backdrop-filter:blur(6px);
+    padding:12px 0;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+  }
+
+  .nav-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+  }
+
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:1.15rem;
+    color:var(--branco);
+    flex:0 0 auto;
+    margin-right:8px;
+  }
+  .logo span{ color:var(--dourado); }
+  .logo-mark{
+    width:42px; height:42px;
+    border-radius:10px;
+    background:linear-gradient(135deg,var(--dourado),var(--dourado-claro));
+    display:flex; align-items:center; justify-content:center;
+    color:var(--azul-marinho);
+    font-weight:900;
+    font-size:1rem;
+  }
+  .ms-mark{
+    width:46px; height:46px;
+    flex:0 0 auto;
+    display:block;
+    filter:drop-shadow(0 4px 14px rgba(240,184,32,.4));
+    transition:transform .35s ease;
+  }
+  .logo:hover .ms-mark{ transform:scale(1.07) rotate(-3deg); }
+  .logo-text{ display:flex; flex-direction:column; line-height:1; }
+  .logo-text .logo-ms{
+    font-size:1.3rem;
+    font-weight:900;
+    letter-spacing:.5px;
+    color:var(--dourado);
+  }
+  .logo-text .logo-tag{
+    font-size:.6rem;
+    font-weight:700;
+    letter-spacing:2.4px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.85);
+    margin-top:3px;
+  }
+
+  nav{ flex:1 1 auto; display:flex; justify-content:center; min-width:0; }
+  nav ul{
+    display:flex;
+    gap:2px;
+    flex-wrap:nowrap;
+  }
+  nav ul li a{
+    color:var(--branco);
+    font-weight:600;
+    font-size:.88rem;
+    padding:10px 12px;
+    border-radius:8px;
+    transition:var(--transicao);
+    position:relative;
+    white-space:nowrap;
+  }
+  nav ul li a:hover{ color:var(--dourado); }
+
+  .nav-mobile-only{ display:none; }
+
+  .nav-cta{ display:flex; align-items:center; gap:12px; flex:0 0 auto; padding-left:16px; border-left:1px solid rgba(255,255,255,.16); }
+
+
+  .hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    width:30px;
+    background:none;
+    z-index:1100;
+  }
+  .hamburger span{
+    display:block;
+    height:3px;
+    width:100%;
+    background:var(--branco);
+    border-radius:3px;
+    transition:var(--transicao);
+  }
+  .hamburger.active span:nth-child(1){ transform:translateY(8px) rotate(45deg); }
+  .hamburger.active span:nth-child(2){ opacity:0; }
+  .hamburger.active span:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
+
+  /* ==========================================================================
+     HERO
+  ========================================================================== */
+  .hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(240,184,32,.22), transparent 42%),
+      radial-gradient(circle at 88% 12%, rgba(168,63,174,.28), transparent 45%),
+      radial-gradient(circle at 80% 85%, rgba(240,184,32,.14), transparent 45%),
+      linear-gradient(135deg, var(--azul-marinho) 0%, var(--azul-marinho-2) 45%, var(--azul-claro) 100%);
+    background-size:140% 140%, 140% 140%, 140% 140%, 200% 200%;
+    animation:heroGlow 22s ease-in-out infinite alternate;
+    overflow:hidden;
+  }
+  @keyframes heroGlow{
+    0%{ background-position:0% 0%, 100% 0%, 100% 100%, 0% 0%; }
+    100%{ background-position:8% 10%, 92% 8%, 88% 92%, 15% 15%; }
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size:44px 44px;
+    pointer-events:none;
+  }
+  .hero-content{
+    position:relative;
+    z-index:2;
+    max-width:760px;
+    padding-top:90px;
+  }
+  .hero h1{
+    color:var(--branco);
+    font-size:clamp(2.2rem,5vw,3.6rem);
+    margin-bottom:20px;
+  }
+  .hero h1 span{ color:var(--dourado); }
+  .hero p{
+    color:rgba(255,255,255,.82);
+    font-size:1.15rem;
+    max-width:560px;
+    margin-bottom:36px;
+  }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  .hero-stats{
+    position:relative;
+    z-index:2;
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:36px;
+  }
+  .hero-stats div{ text-align:left; }
+  .hero-stats strong{
+    display:block;
+    font-size:2rem;
+    color:var(--dourado);
+    font-weight:800;
+  }
+  .hero-stats small{ color:rgba(255,255,255,.7); font-size:.85rem; }
+
+  .hero-watermark{
+    position:absolute;
+    right:-8%; bottom:-12%;
+    width:560px;
+    height:560px;
+    max-width:60vw;
+    opacity:.09;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .scroll-cue{
+    position:absolute;
+    bottom:26px; left:50%;
+    transform:translateX(-50%);
+    color:rgba(255,255,255,.6);
+    font-size:.8rem;
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+    z-index:2;
+  }
+  .scroll-cue .dot{
+    width:6px;height:6px;border-radius:50%;
+    background:var(--dourado);
+    animation:bounceDown 1.6s infinite;
+  }
+  @keyframes bounceDown{
+    0%,100%{ transform:translateY(0); opacity:1;}
+    50%{ transform:translateY(10px); opacity:.4;}
+  }
+
+  /* ==========================================================================
+     REVEAL ANIMATIONS
+  ========================================================================== */
+  .reveal{
+    opacity:0;
+    transform:translateY(28px);
+    transition:opacity .7s ease, transform .7s ease;
+  }
+  .reveal.visible{ opacity:1; transform:translateY(0); }
+  .reveal-delay-1.visible{ transition-delay:.1s; }
+  .reveal-delay-2.visible{ transition-delay:.2s; }
+  .reveal-delay-3.visible{ transition-delay:.3s; }
+  .reveal-delay-4.visible{ transition-delay:.4s; }
+
+  /* ==========================================================================
+     SOBRE
+  ========================================================================== */
+  .sobre{ background:var(--cinza-claro); }
+  .sobre-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+  }
+  .sobre-visual{
+    background:linear-gradient(135deg,var(--azul-marinho),var(--azul-claro));
+    border-radius:var(--radius);
+    padding:44px;
+    color:var(--branco);
+    box-shadow:var(--sombra-forte);
+    position:relative;
+    overflow:hidden;
+  }
+  .sobre-visual::after{
+    content:"";
+    position:absolute; width:220px; height:220px;
+    background:rgba(240,184,32,.18);
+    border-radius:50%;
+    right:-70px; bottom:-70px;
+  }
+  .sobre-visual ul{ position:relative; z-index:1; }
+  .sobre-visual li{
+    display:flex; gap:12px; align-items:flex-start;
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.14);
+  }
+  .sobre-visual li:last-child{ border-bottom:none; }
+  .sobre-visual li .ico{
+    width:34px;height:34px; flex:0 0 34px;
+    border-radius:8px;
+    background:rgba(240,184,32,.22);
+    color:var(--dourado);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800;
+  }
+  .sobre-text p{ color:var(--cinza-escuro); margin-bottom:16px; }
+
+  .valores{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:36px;
+  }
+  .valor-card{
+    background:var(--branco);
+    border-radius:12px;
+    padding:22px;
+    box-shadow:var(--sombra);
+    border-top:3px solid var(--dourado);
+  }
+  .valor-card h4{ font-size:1rem; margin-bottom:8px; }
+  .valor-card p{ font-size:.9rem; color:var(--cinza-medio); }
+
+  /* ==========================================================================
+     CARDS GENÉRICOS (Serviços / Gestão / RH / Treinamentos)
+  ========================================================================== */
+  .grid-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+  }
+  .card{
+    background:var(--branco);
+    border:1px solid #ececf1;
+    border-radius:var(--radius);
+    padding:34px 28px;
+    box-shadow:var(--sombra);
+    transition:var(--transicao);
+    height:100%;
+  }
+  .card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--sombra-forte);
+    border-color:var(--dourado);
+  }
+  .card .ico-wrap{
+    width:56px;height:56px;
+    border-radius:14px;
+    background:linear-gradient(135deg,var(--azul-marinho),var(--azul-claro));
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:20px;
+    color:var(--dourado);
+    font-size:1.4rem;
+    font-weight:800;
+  }
+  .card h3{ margin-bottom:10px; }
+  .card p{ color:var(--cinza-medio); font-size:.95rem; }
+  .card ul{ margin-top:14px; }
+  .card ul li{
+    font-size:.88rem;
+    color:var(--cinza-escuro);
+    padding:5px 0 5px 20px;
+    position:relative;
+  }
+  .card ul li::before{
+    content:"›";
+    position:absolute; left:0; top:5px;
+    color:var(--dourado);
+    font-weight:900;
+  }
+
+  /* ==========================================================================
+     GESTÃO (soluções) - layout alternado
+  ========================================================================== */
+  .gestao{ background:var(--cinza-claro); }
+  .gestao-item{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+    padding:44px 0;
+    border-bottom:1px solid #e4e6ec;
+  }
+  .gestao-item:last-child{ border-bottom:none; }
+  .gestao-item:nth-child(even) .gestao-text{ order:2; }
+  .gestao-num{
+    font-size:3.4rem;
+    font-weight:900;
+    color:rgba(45,10,53,.08);
+    line-height:1;
+    margin-bottom:6px;
+  }
+  .gestao-panel{
+    background:var(--branco);
+    border-radius:var(--radius);
+    padding:30px;
+    box-shadow:var(--sombra);
+  }
+  .bar{
+    height:10px; border-radius:6px;
+    background:#e9ecf3;
+    overflow:hidden;
+    margin:10px 0 4px;
+  }
+  .bar > span{
+    display:block; height:100%;
+    background:linear-gradient(90deg,var(--dourado),var(--dourado-claro));
+    border-radius:6px;
+    width:0%;
+    transition:width 1.4s ease;
+  }
+  .bar-label{ display:flex; justify-content:space-between; font-size:.82rem; color:var(--cinza-medio); }
+
+  /* ==========================================================================
+     PROCESSOS (timeline / passos)
+  ========================================================================== */
+  .processos{ background:var(--branco); }
+  .timeline{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute;
+    top:28px; left:0; right:0;
+    height:2px;
+    background:repeating-linear-gradient(90deg, #dcdfe6 0 8px, transparent 8px 16px);
+    z-index:0;
+  }
+  .tl-step{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    padding:0 8px;
+  }
+  .tl-step .circle{
+    width:56px; height:56px;
+    border-radius:50%;
+    background:var(--azul-marinho);
+    color:var(--dourado);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800;
+    margin:0 auto 18px;
+    box-shadow:0 8px 18px rgba(45,10,53,.25);
+    transition:var(--transicao);
+  }
+  .tl-step:hover .circle{ background:var(--dourado); color:var(--azul-marinho); transform:scale(1.08); }
+  .tl-step h4{ font-size:.98rem; margin-bottom:8px; }
+  .tl-step p{ font-size:.85rem; color:var(--cinza-medio); }
+
+  /* ==========================================================================
+     TREINAMENTOS
+  ========================================================================== */
+  .treinamentos{
+    background:
+      radial-gradient(circle at 10% 10%, rgba(240,184,32,.10), transparent 40%),
+      radial-gradient(circle at 90% 90%, rgba(168,63,174,.18), transparent 45%),
+      linear-gradient(160deg, var(--azul-marinho) 0%, var(--azul-marinho-2) 100%);
+    color:var(--branco);
+  }
+  .treinamentos .section-head h2{ color:var(--branco); }
+  .treinamentos .section-head p{ color:rgba(255,255,255,.68); }
+  .trein-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius);
+    padding:30px;
+    transition:var(--transicao);
+  }
+  .trein-card:hover{
+    background:rgba(255,255,255,.09);
+    transform:translateY(-6px);
+    border-color:var(--dourado);
+  }
+  .trein-card .tag{
+    display:inline-block;
+    font-size:.72rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    background:rgba(240,184,32,.18);
+    color:var(--dourado);
+    padding:5px 12px;
+    border-radius:20px;
+    margin-bottom:14px;
+    font-weight:700;
+  }
+  .trein-card h3{ color:var(--branco); margin-bottom:10px; }
+  .trein-card p{ color:rgba(255,255,255,.68); font-size:.92rem; }
+
+  /* ==========================================================================
+     DEPOIMENTO / CTA FAIXA
+  ========================================================================== */
+  .faixa-cta{
+    background:linear-gradient(135deg,var(--dourado),var(--dourado-claro));
+    padding:60px 0;
+    text-align:center;
+  }
+  .faixa-cta h2{ margin-bottom:14px; }
+  .faixa-cta p{ color:#5a4d17; margin-bottom:28px; max-width:600px; margin-left:auto; margin-right:auto; }
+
+  /* ==========================================================================
+     CONTATO
+  ========================================================================== */
+  .contato{ background:var(--cinza-claro); }
+  .contato-grid{
+    display:grid;
+    grid-template-columns:1fr 1.15fr;
+    gap:50px;
+  }
+  .contato-info{
+    background:var(--azul-marinho);
+    color:var(--branco);
+    border-radius:var(--radius);
+    padding:40px 34px;
+  }
+  .contato-info h3{ color:var(--branco); margin-bottom:18px; }
+  .contato-info p{ color:rgba(255,255,255,.7); margin-bottom:26px; font-size:.95rem; }
+  .info-line{
+    display:flex; gap:14px; align-items:flex-start;
+    margin-bottom:20px;
+  }
+  .info-line .ico{
+    width:38px;height:38px; flex:0 0 38px;
+    border-radius:9px;
+    background:rgba(240,184,32,.18);
+    color:var(--dourado);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800;
+  }
+  .info-line strong{ display:block; font-size:.9rem; }
+  .info-line span{ font-size:.88rem; color:rgba(255,255,255,.7); }
+
+  .social-row{ display:flex; gap:10px; margin-top:28px; }
+  .social-row a{
+    width:40px; height:40px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.25);
+    display:flex; align-items:center; justify-content:center;
+    font-size:.85rem;
+    font-weight:700;
+    transition:var(--transicao);
+  }
+  .social-row a:hover{ background:var(--dourado); color:var(--azul-marinho); border-color:var(--dourado); }
+
+  .form-card{
+    background:var(--branco);
+    border-radius:var(--radius);
+    padding:40px 34px;
+    box-shadow:var(--sombra);
+  }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .field{ margin-bottom:20px; }
+  .field label{
+    display:block;
+    font-size:.85rem;
+    font-weight:700;
+    margin-bottom:8px;
+    color:var(--azul-marinho);
+  }
+  .field input,
+  .field select,
+  .field textarea{
+    width:100%;
+    padding:13px 16px;
+    border:1.5px solid #dfe2ea;
+    border-radius:10px;
+    font-size:.95rem;
+    font-family:inherit;
+    transition:var(--transicao);
+    background:var(--branco);
+    color:var(--texto);
+  }
+  .field input:focus,
+  .field select:focus,
+  .field textarea:focus{
+    outline:none;
+    border-color:var(--dourado);
+    box-shadow:0 0 0 4px rgba(240,184,32,.14);
+  }
+  .field textarea{ resize:vertical; min-height:120px; }
+  .field.error input,
+  .field.error select,
+  .field.error textarea{ border-color:#d64545; }
+  .error-msg{
+    display:none;
+    color:#d64545;
+    font-size:.78rem;
+    margin-top:6px;
+  }
+  .field.error .error-msg{ display:block; }
+
+  .form-msg{
+    display:none;
+    padding:14px 18px;
+    border-radius:10px;
+    font-size:.9rem;
+    margin-bottom:20px;
+    font-weight:600;
+  }
+  .form-msg.success{ display:block; background:#e5f7ea; color:#1e7a3d; }
+  .form-msg.error{ display:block; background:#fdeaea; color:#b3261e; }
+
+  /* ==========================================================================
+     FOOTER
+  ========================================================================== */
+  footer{ background:var(--azul-marinho-2); color:rgba(255,255,255,.75); padding:60px 0 0; }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+    gap:40px;
+    padding-bottom:44px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+  }
+  .footer-grid h4{ color:var(--branco); font-size:1rem; margin-bottom:18px; }
+  .footer-grid li{ margin-bottom:10px; font-size:.9rem; }
+  .footer-grid a:hover{ color:var(--dourado); }
+  .footer-logo{ display:flex; align-items:center; gap:10px; margin-bottom:16px; font-weight:800; color:var(--branco); font-size:1.2rem; }
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:22px 0;
+    font-size:.82rem;
+  }
+  .footer-bottom a{ color:rgba(255,255,255,.6); }
+
+  .back-to-top{
+    position:fixed;
+    right:24px; bottom:24px;
+    width:48px; height:48px;
+    border-radius:50%;
+    background:var(--dourado);
+    color:var(--azul-marinho);
+    display:flex; align-items:center; justify-content:center;
+    font-weight:900;
+    font-size:1.1rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    opacity:0; visibility:hidden;
+    transform:translateY(10px);
+    transition:var(--transicao);
+    z-index:900;
+  }
+  .back-to-top.show{ opacity:1; visibility:visible; transform:translateY(0); }
+  .back-to-top:hover{ background:var(--dourado-claro); }
+
+  /* ==========================================================================
+     RESPONSIVO
+  ========================================================================== */
+  /* Menu colapsa em hamburger bem antes do conteúdo (logo + 8 itens + 2 botões)
+     esbarrar uns nos outros — evita qualquer sobreposição visual no header. */
+  @media (max-width: 1400px){
+    nav{
+      position:fixed;
+      top:0; right:0;
+      height:100vh;
+      width:78%;
+      max-width:320px;
+      background:var(--azul-marinho);
+      transform:translateX(100%);
+      transition:transform .4s ease;
+      padding:100px 30px 30px;
+      box-shadow:-10px 0 30px rgba(0,0,0,.3);
+      z-index:1050;
+    }
+    nav.open{ transform:translateX(0); }
+    nav ul{ flex-direction:column; gap:6px; }
+    nav ul li a{ display:block; padding:14px 10px; font-size:1rem; border-bottom:1px solid rgba(255,255,255,.08); white-space:normal; }
+    .nav-cta{ border-left:none; padding-left:0; gap:10px; }
+    .nav-cta .btn-primary{ display:none; }
+    .nav-cta .btn-ghost{ display:none; }
+    .nav-mobile-only{ display:block; margin-top:10px; }
+    .nav-mobile-only .nav-link{ border-bottom:none !important; }
+    .nav-link-highlight{
+      background:linear-gradient(135deg,var(--dourado),var(--dourado-claro));
+      color:var(--azul-marinho) !important;
+      border-radius:50px;
+      text-align:center;
+      font-weight:700;
+    }
+    .hamburger{ display:flex; }
+    .logo{ font-size:1.05rem; }
+  }
+
+  @media (max-width: 980px){
+    .sobre-grid{ grid-template-columns:1fr; }
+    .valores{ grid-template-columns:1fr 1fr; }
+    .grid-cards{ grid-template-columns:1fr 1fr; }
+    .gestao-item{ grid-template-columns:1fr; }
+    .gestao-item:nth-child(even) .gestao-text{ order:0; }
+    .timeline{ grid-template-columns:repeat(3,1fr); row-gap:40px; }
+    .timeline::before{ display:none; }
+    .contato-grid{ grid-template-columns:1fr; }
+    .hero-stats{ grid-template-columns:repeat(2,1fr); row-gap:26px; }
+    .footer-grid{ grid-template-columns:1fr 1fr; }
+  }
+
+  @media (max-width: 760px){
+    section{ padding:70px 0; }
+    .valores{ grid-template-columns:1fr; }
+    .grid-cards{ grid-template-columns:1fr; }
+    .timeline{ grid-template-columns:1fr 1fr; }
+    .form-row{ grid-template-columns:1fr; }
+    .footer-grid{ grid-template-columns:1fr; }
+    .hero-actions .btn{ width:100%; }
+  }
+
+  @media (max-width: 460px){
+    .timeline{ grid-template-columns:1fr; }
+    .hero-stats{ grid-template-columns:1fr 1fr; }
+  }
+
+  /* overlay para menu mobile */
+  .nav-overlay{
+    display:none;
+    position:fixed; inset:0;
+    background:rgba(0,0,0,.45);
+    z-index:999;
+  }
+  .nav-overlay.show{ display:block; }
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     HEADER / NAV
+========================================================== -->
+<header id="header">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo">
+      <svg class="ms-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="badgeGradHeader" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="var(--azul-marinho-2)"/>
+            <stop offset="100%" stop-color="var(--azul-marinho)"/>
+          </linearGradient>
+        </defs>
+        <g style="isolation:isolate">
+          <rect width="100" height="100" rx="24" fill="url(#badgeGradHeader)"/>
+          <polygon points="22,80 50,20 78,80" fill="var(--dourado)"/>
+          <circle cx="46" cy="44" r="26" fill="var(--azul-claro)" style="mix-blend-mode:screen" opacity="0.85"/>
+          <circle cx="60" cy="58" r="17" fill="var(--dourado)" style="mix-blend-mode:screen" opacity="0.5"/>
+          <polygon points="12,62 28,62 19,47" fill="var(--dourado-claro)" opacity="0.9"/>
+          <circle cx="38" cy="82" r="6.5" fill="var(--dourado-claro)"/>
+        </g>
+      </svg>
+      <span class="logo-text">
+        <span class="logo-ms">MS</span>
+        <span class="logo-tag">Mais Pessoas</span>
+      </span>
+    </a>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#servicos" class="nav-link">Serviços</a></li>
+        <li><a href="#gestao" class="nav-link">Soluções em Gestão</a></li>
+        <li><a href="#rh" class="nav-link">Recursos Humanos</a></li>
+        <li><a href="#processos" class="nav-link">Processos</a></li>
+        <li><a href="#treinamentos" class="nav-link">Treinamentos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li class="nav-mobile-only"><a href="https://jobs.quickin.io/msrhinteligente/pages/carreiras" class="nav-link" target="_blank" rel="noopener noreferrer">Carreiras</a></li>
+        <li class="nav-mobile-only"><a href="#contato" class="nav-link nav-link-highlight" data-config-link="whatsapp">Fale Conosco</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="https://jobs.quickin.io/msrhinteligente/pages/carreiras" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Carreiras</a>
+      <a href="#contato" class="btn btn-primary" data-config-link="whatsapp">Fale Conosco</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- =========================================================
+     1. HOME
+========================================================== -->
+<section class="hero" id="home">
+  <svg class="hero-watermark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <polygon points="22,80 50,20 78,80" fill="var(--dourado)"/>
+    <circle cx="46" cy="44" r="26" fill="var(--dourado-claro)" style="mix-blend-mode:overlay" opacity="0.8"/>
+    <circle cx="60" cy="58" r="17" fill="var(--dourado)" style="mix-blend-mode:overlay" opacity="0.6"/>
+    <polygon points="12,62 28,62 19,47" fill="var(--dourado-claro)" opacity="0.7"/>
+    <circle cx="38" cy="82" r="6.5" fill="var(--dourado-claro)" opacity="0.7"/>
+  </svg>
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow reveal visible">Consultoria em Recrutamento &amp; Gestão de Pessoas</span>
+      <h1 class="reveal visible">Conectamos empresas às <span>pessoas certas</span>, no tempo certo</h1>
+      <p class="reveal visible">A MS Mais Pessoas une tecnologia, processos estruturados e proximidade humana para
+        transformar recrutamento, seleção e gestão de RH em vantagem competitiva para o seu negócio.</p>
+      <div class="hero-actions reveal visible">
+        <a href="#contato" class="btn btn-primary" data-config-link="whatsapp">Solicitar Proposta</a>
+        <a href="#servicos" class="btn btn-outline">Conhecer Serviços</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="reveal"><strong data-counter="180">0</strong><small>Processos seletivos conduzidos</small></div>
+      <div class="reveal reveal-delay-1"><strong data-counter="97">0</strong><small>% de satisfação dos clientes</small></div>
+      <div class="reveal reveal-delay-2"><strong data-counter="30">0</strong><small>Dias, tempo médio de contratação</small></div>
+      <div class="reveal reveal-delay-3"><strong data-counter="12">0</strong><small>Setores atendidos</small></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>Role para explorar</span><span class="dot"></span></div>
+</section>
+
+<!-- =========================================================
+     2. SOBRE A MS MAIS PESSOAS
+========================================================== -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-text reveal">
+        <span class="eyebrow">Quem somos</span>
+        <h2>Sobre a MS Mais Pessoas</h2>
+        <p>A MS Mais Pessoas nasceu para simplificar um dos desafios mais importantes de qualquer
+          organização: encontrar, desenvolver e reter talentos. Combinamos metodologia estruturada
+          de recrutamento com ferramentas de gestão orientadas a dados, entregando processos
+          transparentes do início ao fechamento de cada vaga.</p>
+        <p>Atuamos de forma 100% remota e ágil, com acompanhamento próximo do cliente em cada etapa,
+          desde o mapeamento do perfil ideal até a integração do novo colaborador — sempre com foco
+          em economia real de tempo e custo para o contratante.</p>
+
+        <div class="valores">
+          <div class="valor-card">
+            <h4>Missão</h4>
+            <p>Aproximar pessoas e empresas por meio de processos seletivos justos, ágeis e assertivos.</p>
+          </div>
+          <div class="valor-card">
+            <h4>Visão</h4>
+            <p>Ser referência em gestão de pessoas orientada a resultado no mercado em que atuamos.</p>
+          </div>
+          <div class="valor-card">
+            <h4>Valores</h4>
+            <p>Transparência, agilidade, ética e compromisso com o desenvolvimento humano.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-visual reveal reveal-delay-1">
+        <h3 style="color:#fff; margin-bottom:22px;">Por que escolher a MS Mais Pessoas</h3>
+        <ul>
+          <li><span class="ico">01</span>
+            <div><strong>Processos sob medida</strong><br><small>Metodologia adaptada ao porte e à cultura de cada cliente.</small></div>
+          </li>
+          <li><span class="ico">02</span>
+            <div><strong>Tecnologia aplicada ao RH</strong><br><small>Painéis e indicadores para acompanhar cada etapa em tempo real.</small></div>
+          </li>
+          <li><span class="ico">03</span>
+            <div><strong>Times especializados</strong><br><small>Consultores dedicados por segmento de mercado.</small></div>
+          </li>
+          <li><span class="ico">04</span>
+            <div><strong>Garantia de reposição</strong><br><small>Segurança contratual em caso de desligamento no período de garantia.</small></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     3. SERVIÇOS
+========================================================== -->
+<section id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Serviços</h2>
+      <p>Soluções completas para todo o ciclo de gestão de pessoas, da atração de talentos ao desenvolvimento contínuo das equipes.</p>
+    </div>
+
+    <div class="grid-cards">
+      <div class="card reveal">
+        <div class="ico-wrap">R&amp;S</div>
+        <h3>Recrutamento &amp; Seleção</h3>
+        <p>Atração e triagem de candidatos com metodologia estruturada, do anúncio da vaga à entrevista final.</p>
+        <ul>
+          <li>Divulgação multicanal da vaga</li>
+          <li>Triagem curricular e técnica</li>
+          <li>Entrevistas comportamentais</li>
+        </ul>
+      </div>
+
+      <div class="card reveal reveal-delay-1">
+        <div class="ico-wrap">BI</div>
+        <h3>Consultoria de Gestão</h3>
+        <p>Diagnóstico e reestruturação de processos internos de RH, com indicadores e painéis de controle.</p>
+        <ul>
+          <li>Mapeamento de processos</li>
+          <li>Dashboards e KPIs de RH</li>
+          <li>Planos de ação corretivos</li>
+        </ul>
+      </div>
+
+      <div class="card reveal reveal-delay-2">
+        <div class="ico-wrap">HH</div>
+        <h3>Head Hunting</h3>
+        <p>Busca ativa de profissionais para posições estratégicas e de liderança, com sigilo e abordagem direta.</p>
+        <ul>
+          <li>Mapeamento de mercado</li>
+          <li>Abordagem confidencial</li>
+          <li>Avaliação de fit cultural</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <div class="ico-wrap">AS</div>
+        <h3>Assessment Comportamental</h3>
+        <p>Avaliações estruturadas de perfil comportamental e potencial de liderança para decisões mais seguras.</p>
+        <ul>
+          <li>Testes validados cientificamente</li>
+          <li>Relatórios individuais</li>
+          <li>Devolutiva para gestores</li>
+        </ul>
+      </div>
+
+      <div class="card reveal reveal-delay-1">
+        <div class="ico-wrap">VR</div>
+        <h3>Verificação de Referências</h3>
+        <p>Checagem detalhada do histórico profissional dos candidatos finalistas antes da contratação.</p>
+        <ul>
+          <li>Contato com ex-gestores</li>
+          <li>Validação documental</li>
+          <li>Relatório de conformidade</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     4. SOLUÇÕES EM GESTÃO
+========================================================== -->
+<section class="gestao" id="gestao">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Gestão orientada a dados</span>
+      <h2>Soluções em Gestão</h2>
+      <p>Ferramentas e indicadores que dão visibilidade total sobre o desempenho das áreas de pessoas.</p>
+    </div>
+
+    <div class="gestao-item">
+      <div class="gestao-text reveal">
+        <div class="gestao-num">01</div>
+        <h3>Painéis de Acompanhamento (Dashboards)</h3>
+        <p style="color:var(--cinza-medio); margin-top:12px;">Construímos painéis vivos, ligados diretamente à
+          base de dados de vagas e processos, para que o cliente acompanhe status, prazos e custos em tempo real —
+          sem depender de planilhas paralelas ou atualizações manuais.</p>
+      </div>
+      <div class="gestao-panel reveal reveal-delay-1">
+        <div class="bar-label"><span>Taxa de Colocação</span><span>92%</span></div>
+        <div class="bar"><span data-width="92"></span></div>
+        <div class="bar-label"><span>Cumprimento de Prazo</span><span>85%</span></div>
+        <div class="bar"><span data-width="85"></span></div>
+        <div class="bar-label"><span>Satisfação do Cliente</span><span>97%</span></div>
+        <div class="bar"><span data-width="97"></span></div>
+      </div>
+    </div>
+
+    <div class="gestao-item">
+      <div class="gestao-text reveal">
+        <div class="gestao-num">02</div>
+        <h3>Indicadores de Recrutamento (KPIs)</h3>
+        <p style="color:var(--cinza-medio); margin-top:12px;">Acompanhamento de métricas essenciais como tempo
+          médio de contratação, taxa de colocação, custo por vaga e comissionamento — calculados automaticamente
+          a partir da base mestre de processos, sem retrabalho manual.</p>
+      </div>
+      <div class="gestao-panel reveal reveal-delay-1">
+        <div class="bar-label"><span>Dias médios para contratar</span><span>28 dias</span></div>
+        <div class="bar"><span data-width="70"></span></div>
+        <div class="bar-label"><span>Vagas fechadas no prazo</span><span>88%</span></div>
+        <div class="bar"><span data-width="88"></span></div>
+        <div class="bar-label"><span>Redução de custo vs. modelo tradicional</span><span>30%</span></div>
+        <div class="bar"><span data-width="30"></span></div>
+      </div>
+    </div>
+
+    <div class="gestao-item">
+      <div class="gestao-text reveal">
+        <div class="gestao-num">03</div>
+        <h3>Governança e Conformidade de Dados</h3>
+        <p style="color:var(--cinza-medio); margin-top:12px;">Padronização de cadastros, unificação de bases
+          divergentes, controle de acesso e tratamento adequado de dados de candidatos, em conformidade com a
+          LGPD, garantindo segurança e integridade das informações.</p>
+      </div>
+      <div class="gestao-panel reveal reveal-delay-1">
+        <div class="bar-label"><span>Base de dados unificada</span><span>100%</span></div>
+        <div class="bar"><span data-width="100"></span></div>
+        <div class="bar-label"><span>Conformidade LGPD</span><span>95%</span></div>
+        <div class="bar"><span data-width="95"></span></div>
+        <div class="bar-label"><span>Auditoria de processos</span><span>90%</span></div>
+        <div class="bar"><span data-width="90"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     5. RECURSOS HUMANOS
+========================================================== -->
+<section id="rh">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Departamento de RH</span>
+      <h2>Recursos Humanos</h2>
+      <p>Apoio contínuo às áreas de RH das empresas parceiras, com serviços que vão além da contratação.</p>
+    </div>
+
+    <div class="grid-cards">
+      <div class="card reveal">
+        <div class="ico-wrap">RH¹</div>
+        <h3>RH como Serviço</h3>
+        <p>Estruturação completa ou parcial da área de RH para empresas que ainda não possuem o departamento formalizado.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <div class="ico-wrap">BT</div>
+        <h3>Banco de Talentos</h3>
+        <p>Candidatos qualificados, não aprovados em processos anteriores, ficam disponíveis para futuras vagas sem custo adicional.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="ico-wrap">CR</div>
+        <h3>Cargos e Salários</h3>
+        <p>Estruturação de planos de cargos, faixas salariais e benefícios alinhados ao mercado e à estratégia da empresa.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico-wrap">CL</div>
+        <h3>Clima Organizacional</h3>
+        <p>Pesquisas de clima e engajamento com planos de ação para fortalecer a cultura interna.</p>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <div class="ico-wrap">DP</div>
+        <h3>Reestruturação de Departamento Pessoal</h3>
+        <p>Revisão e reorganização de rotinas de admissão, integração e documentação, em parceria com o time interno do cliente.</p>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <div class="ico-wrap">NPS</div>
+        <h3>Pesquisa de Satisfação</h3>
+        <p>Coleta de feedback pós-processo seletivo (NPS) para melhoria contínua da experiência do candidato e do cliente.</p>
+      </div>
+    </div>
+
+    <div class="faixa-cta reveal" style="margin-top:56px; border-radius:var(--radius);">
+      <h3 style="margin-bottom:10px;">Está buscando uma nova oportunidade?</h3>
+      <p style="color:#5a4d17; max-width:560px; margin:0 auto 22px;">Conheça as vagas abertas em nossos clientes e cadastre seu currículo em nosso banco de talentos.</p>
+      <a href="https://jobs.quickin.io/msrhinteligente/pages/carreiras" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Ver Vagas / Carreiras</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     6. PROCESSOS
+========================================================== -->
+<section class="processos" id="processos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Como trabalhamos</span>
+      <h2>Fluxo de Recrutamento e Seleção</h2>
+      <p>Um fluxo claro, objetivo e acompanhado de perto em cada etapa — do briefing à integração do novo colaborador.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step reveal">
+        <div class="circle">1</div>
+        <h4>Briefing da Vaga</h4>
+        <p>Levantamento do perfil, requisitos técnicos e comportamentais junto ao cliente.</p>
+      </div>
+      <div class="tl-step reveal reveal-delay-1">
+        <div class="circle">2</div>
+        <h4>Atração &amp; Triagem</h4>
+        <p>Divulgação da vaga e filtragem inicial de candidatos compatíveis.</p>
+      </div>
+      <div class="tl-step reveal reveal-delay-2">
+        <div class="circle">3</div>
+        <h4>Entrevistas</h4>
+        <p>Avaliação técnica e comportamental dos candidatos finalistas.</p>
+      </div>
+      <div class="tl-step reveal reveal-delay-3">
+        <div class="circle">4</div>
+        <h4>Apresentação</h4>
+        <p>Shortlist enviada ao cliente com relatório completo de cada candidato.</p>
+      </div>
+      <div class="tl-step reveal reveal-delay-4">
+        <div class="circle">5</div>
+        <h4>Contratação</h4>
+        <p>Acompanhamento do fechamento e apoio na integração do novo colaborador.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     7. TREINAMENTOS
+========================================================== -->
+<section class="treinamentos" id="treinamentos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Desenvolvimento contínuo</span>
+      <h2>Treinamentos</h2>
+      <p>Programas de capacitação para líderes, equipes e áreas de RH, presenciais ou remotos.</p>
+    </div>
+
+    <div class="grid-cards">
+      <div class="trein-card reveal">
+        <span class="tag">Liderança</span>
+        <h3>Liderança e Gestão de Equipes</h3>
+        <p>Desenvolvimento de competências essenciais para líderes conduzirem times com mais autonomia e resultado.</p>
+      </div>
+      <div class="trein-card reveal reveal-delay-1">
+        <span class="tag">Recrutamento</span>
+        <h3>Entrevista por Competências</h3>
+        <p>Capacitação de gestores e recrutadores para conduzir entrevistas mais assertivas e reduzir viés.</p>
+      </div>
+      <div class="trein-card reveal reveal-delay-2">
+        <span class="tag">Comportamental</span>
+        <h3>Comunicação e Feedback</h3>
+        <p>Ferramentas práticas para dar e receber feedback de forma clara, respeitosa e produtiva.</p>
+      </div>
+      <div class="trein-card reveal">
+        <span class="tag">Onboarding</span>
+        <h3>Integração de Novos Colaboradores</h3>
+        <p>Estruturação de programas de onboarding para acelerar a adaptação e a produtividade inicial.</p>
+      </div>
+      <div class="trein-card reveal reveal-delay-1">
+        <span class="tag">Dados</span>
+        <h3>Indicadores de RH na Prática</h3>
+        <p>Como interpretar e usar KPIs de recrutamento e retenção para decisões mais estratégicas.</p>
+      </div>
+      <div class="trein-card reveal reveal-delay-2">
+        <span class="tag">Cultura</span>
+        <h3>Cultura Organizacional</h3>
+        <p>Workshops para alinhar valores, propósito e comportamento esperado em todos os níveis da empresa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA faixa -->
+<div class="faixa-cta reveal">
+  <div class="container">
+    <h2>Pronto para transformar a gestão de pessoas da sua empresa?</h2>
+    <p>Fale com nosso time e receba uma proposta personalizada para o seu momento e segmento.</p>
+    <a href="#contato" class="btn btn-dark" data-config-link="whatsapp">Solicitar Contato</a>
+  </div>
+</div>
+
+<!-- =========================================================
+     8. CONTATO
+========================================================== -->
+<section class="contato" id="contato">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Vamos conversar</span>
+      <h2>Contato</h2>
+      <p>Preencha o formulário abaixo ou fale diretamente pelos nossos canais. Retornamos em até 1 dia útil.</p>
+    </div>
+
+    <div class="contato-grid">
+      <div class="contato-info reveal">
+        <h3>Canais de Atendimento</h3>
+        <p>Estamos disponíveis para atender empresas de todos os portes e segmentos, com atendimento remoto e ágil.</p>
+
+        <div class="info-line">
+          <span class="ico">@</span>
+          <div><strong>E-mail</strong><span id="infoEmail">wilder@cwkgestao.com.br</span></div>
+        </div>
+        <div class="info-line">
+          <span class="ico">☎</span>
+          <div><strong>Telefone / WhatsApp</strong><span id="infoPhone">+55 31 98297-3142</span></div>
+        </div>
+        <div class="info-line">
+          <span class="ico">📍</span>
+          <div><strong>Atendimento</strong><span>Remoto — atuação em todo o Brasil</span></div>
+        </div>
+        <div class="info-line">
+          <span class="ico">⏱</span>
+          <div><strong>Horário</strong><span>Seg. a Sex., 9h às 18h</span></div>
+        </div>
+
+        <div class="social-row">
+          <a href="#" data-config-link="linkedin" title="LinkedIn">in</a>
+          <a href="#" data-config-link="instagram" title="Instagram">ig</a>
+          <a href="#" data-config-link="whatsapp" title="WhatsApp">wa</a>
+        </div>
+      </div>
+
+      <div class="form-card reveal reveal-delay-1">
+        <div class="form-msg" id="formMsg"></div>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field" id="field-nome">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome">
+              <span class="error-msg">Informe seu nome.</span>
+            </div>
+            <div class="field" id="field-email">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="voce@empresa.com">
+              <span class="error-msg">Informe um e-mail válido.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field" id="field-telefone">
+              <label for="telefone">Telefone *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+              <span class="error-msg">Informe um telefone válido.</span>
+            </div>
+            <div class="field" id="field-empresa">
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa">
+            </div>
+          </div>
+
+          <div class="field" id="field-assunto">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione uma opção</option>
+              <option value="Recrutamento e Seleção">Recrutamento e Seleção</option>
+              <option value="Soluções em Gestão">Soluções em Gestão</option>
+              <option value="Recursos Humanos">Recursos Humanos</option>
+              <option value="Treinamentos">Treinamentos</option>
+              <option value="Outro assunto">Outro assunto</option>
+            </select>
+            <span class="error-msg">Selecione um assunto.</span>
+          </div>
+
+          <div class="field" id="field-mensagem">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre sua necessidade..."></textarea>
+            <span class="error-msg">Escreva sua mensagem.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg class="ms-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="badgeGradFooter" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="var(--azul-marinho-2)"/>
+                <stop offset="100%" stop-color="var(--azul-marinho)"/>
+              </linearGradient>
+            </defs>
+            <g style="isolation:isolate">
+              <rect width="100" height="100" rx="24" fill="url(#badgeGradFooter)"/>
+              <polygon points="22,80 50,20 78,80" fill="var(--dourado)"/>
+              <circle cx="46" cy="44" r="26" fill="var(--azul-claro)" style="mix-blend-mode:screen" opacity="0.85"/>
+              <circle cx="60" cy="58" r="17" fill="var(--dourado)" style="mix-blend-mode:screen" opacity="0.5"/>
+              <polygon points="12,62 28,62 19,47" fill="var(--dourado-claro)" opacity="0.9"/>
+              <circle cx="38" cy="82" r="6.5" fill="var(--dourado-claro)"/>
+            </g>
+          </svg>
+          <span class="logo-text">
+            <span class="logo-ms">MS</span>
+            <span class="logo-tag">Mais Pessoas</span>
+          </span>
+        </div>
+        <p style="font-size:.88rem; max-width:280px;">Consultoria especializada em recrutamento, seleção e gestão
+          de pessoas, com atuação remota e orientada a resultado.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#processos">Processos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Soluções</h4>
+        <ul>
+          <li><a href="#gestao">Soluções em Gestão</a></li>
+          <li><a href="#rh">Recursos Humanos</a></li>
+          <li><a href="#treinamentos">Treinamentos</a></li>
+          <li><a href="https://jobs.quickin.io/msrhinteligente/pages/carreiras" target="_blank" rel="noopener noreferrer">Carreiras</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>wilder@cwkgestao.com.br</li>
+          <li>+55 31 98297-3142</li>
+          <li>Atendimento remoto — Brasil</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="anoAtual"></span> MS Mais Pessoas. Todos os direitos reservados.</span>
+      <span>Desenvolvido com foco em pessoas.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ==========================================================
+     CONFIGURAÇÃO CENTRAL DE LINKS
+     Altere aqui os links reais da empresa — todos os botões
+     marcados com data-config-link usam estes valores.
+  ========================================================== */
+  const CONFIG = {
+    whatsapp: "https://wa.me/5531982973142?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20MS%20Mais%20Pessoas",
+    linkedin: "https://www.linkedin.com/company/ms-mais-pessoas",
+    instagram: "https://www.instagram.com/msmaispessoas",
+    email: "wilder@cwkgestao.com.br",
+    telefone: "+55 31 98297-3142"
+  };
+
+  document.querySelectorAll("[data-config-link]").forEach(function(el){
+    const key = el.getAttribute("data-config-link");
+    if(CONFIG[key]){
+      el.setAttribute("href", CONFIG[key]);
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+
+  document.getElementById("infoEmail").textContent = CONFIG.email;
+  document.getElementById("infoPhone").textContent = CONFIG.telefone;
+  document.getElementById("anoAtual").textContent = new Date().getFullYear();
+
+  /* ==========================================================
+     HEADER: sombra ao rolar
+  ========================================================== */
+  const header = document.getElementById("header");
+  function onScroll(){
+    header.classList.toggle("scrolled", window.scrollY > 30);
+    document.getElementById("backToTop").classList.toggle("show", window.scrollY > 500);
+  }
+  document.addEventListener("scroll", onScroll);
+  onScroll();
+
+  /* ==========================================================
+     MENU RESPONSIVO
+  ========================================================== */
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("nav");
+  const overlay = document.getElementById("navOverlay");
+
+  function toggleMenu(open){
+    const isOpen = open !== undefined ? open : !nav.classList.contains("open");
+    nav.classList.toggle("open", isOpen);
+    hamburger.classList.toggle("active", isOpen);
+    overlay.classList.toggle("show", isOpen);
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  }
+
+  hamburger.addEventListener("click", function(){ toggleMenu(); });
+  overlay.addEventListener("click", function(){ toggleMenu(false); });
+  document.querySelectorAll(".nav-link").forEach(function(link){
+    link.addEventListener("click", function(){ toggleMenu(false); });
+  });
+
+  /* ==========================================================
+     BACK TO TOP
+  ========================================================== */
+  document.getElementById("backToTop").addEventListener("click", function(){
+    window.scrollTo({ top:0, behavior:"smooth" });
+  });
+
+  /* ==========================================================
+     ANIMAÇÕES AO ROLAR (IntersectionObserver)
+  ========================================================== */
+  const revealEls = document.querySelectorAll(".reveal");
+  const barEls = document.querySelectorAll(".bar > span");
+  const counterEls = document.querySelectorAll("[data-counter]");
+  let countersStarted = false;
+  let barsStarted = false;
+
+  function animateCounters(){
+    if(countersStarted) return;
+    countersStarted = true;
+    counterEls.forEach(function(el){
+      const target = parseInt(el.getAttribute("data-counter"), 10) || 0;
+      let current = 0;
+      const step = Math.max(1, Math.ceil(target / 60));
+      const timer = setInterval(function(){
+        current += step;
+        if(current >= target){ current = target; clearInterval(timer); }
+        el.textContent = current;
+      }, 20);
+    });
+  }
+
+  function animateBars(){
+    if(barsStarted) return;
+    barsStarted = true;
+    barEls.forEach(function(bar){
+      const w = bar.getAttribute("data-width") || "0";
+      setTimeout(function(){ bar.style.width = w + "%"; }, 150);
+    });
+  }
+
+  if("IntersectionObserver" in window){
+    const observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+          if(entry.target.closest(".hero-stats")) animateCounters();
+          if(entry.target.closest(".gestao-panel")) animateBars();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.15 });
+
+    revealEls.forEach(function(el){ observer.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("visible"); });
+    animateCounters();
+    animateBars();
+  }
+
+  /* ==========================================================
+     FORMULÁRIO DE CONTATO
+  ========================================================== */
+  const form = document.getElementById("contactForm");
+  const formMsg = document.getElementById("formMsg");
+
+  const validators = {
+    nome: function(v){ return v.trim().length >= 3; },
+    email: function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); },
+    telefone: function(v){ return v.replace(/\D/g,"").length >= 10; },
+    assunto: function(v){ return v.trim().length > 0; },
+    mensagem: function(v){ return v.trim().length >= 10; }
+  };
+
+  function setFieldState(id, isValid){
+    const field = document.getElementById("field-" + id);
+    if(field) field.classList.toggle("error", !isValid);
+  }
+
+  Object.keys(validators).forEach(function(id){
+    const input = document.getElementById(id);
+    if(!input) return;
+    input.addEventListener("input", function(){
+      setFieldState(id, validators[id](input.value));
+    });
+    input.addEventListener("blur", function(){
+      setFieldState(id, validators[id](input.value));
+    });
+  });
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    let valid = true;
+
+    Object.keys(validators).forEach(function(id){
+      const input = document.getElementById(id);
+      const ok = validators[id](input.value);
+      setFieldState(id, ok);
+      if(!ok) valid = false;
+    });
+
+    formMsg.className = "form-msg";
+
+    if(!valid){
+      formMsg.textContent = "Por favor, corrija os campos destacados antes de enviar.";
+      formMsg.classList.add("error");
+      formMsg.style.display = "block";
+      return;
+    }
+
+    // Simulação de envio (sem backend). Integre aqui com seu serviço
+    // de e-mail/API (ex.: fetch para um endpoint próprio ou serviço
+    // de formulários) quando o site for publicado.
+    const nome = document.getElementById("nome").value.trim();
+
+    formMsg.textContent = "Obrigado, " + nome + "! Sua mensagem foi enviada. Em breve entraremos em contato.";
+    formMsg.classList.add("success");
+    formMsg.style.display = "block";
+
+    form.reset();
+    document.querySelectorAll(".field.error").forEach(function(f){ f.classList.remove("error"); });
+
+    setTimeout(function(){
+      formMsg.style.display = "none";
+    }, 7000);
+  });
+
+})();
+</script>
+</body>
+</html>
